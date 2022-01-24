@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.delete {
+  float: right;
+  color: #777;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-container {
+  margin-top: 200px;
+  width: 450px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 430px;
+}
+
+.todays {
+  margin-left: 8px;
+}
+
+.todo-form {
+  display: flex;
+  border: 1px solid rgb(230, 230, 230);
+  height: 48px;
+}
+
+.italic-text {
+  position: relative;
+  margin-left: 8px;
+  font-style: italic;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #505050;
+  width: 395px;
+}
+
+.check:checked + .text-lined {
+  text-decoration: line-through;
+}
+
+.todo-added {
+  display: flex;
+  border: 1px solid rgb(230, 230, 230);
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px;
+  outline: none;
+  font-size: 16px;
+  width: 450px;
+  height: 48px;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+}
+
+.clear {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+
+.fa-ellipsis-v {
+  cursor: move;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
